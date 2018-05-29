@@ -21,11 +21,11 @@ class App extends Component {
       <div>
         <button onClick={this.handleClick}>Get User Data</button>
         {this.state.user.avatar_url && 
-        <div>
+        <div className="card">
           <img src={`${this.state.user.avatar_url}`} alt="This is me"/>
-          <p>{this.state.user.name}</p>
-          <p>{this.state.user.location}</p>
-          <p>{this.state.user.bio}</p>
+          <h1>{this.state.user.name}</h1>
+          <h4>{this.state.user.location}</h4>
+          <p className="title">{this.state.user.bio}</p>
         </div>
         }  
       </div>
